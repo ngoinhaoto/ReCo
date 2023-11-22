@@ -3,3 +3,43 @@
 body {
   font-family: "Poppins";
 }
+
+.reco-nav {
+  background-color: #f7ffe5 !important;
+  justify-content: space-around !important;
+}
+
+#avatar {
+  border-radius: 50%;
+}
+
+.shopping-cart {
+  color: #00640a !important;
+  font-size: 1.5rem;
+}
+
+#searchbar {
+  width: 35vw;
+}
+
+.log-out-button {
+  background-color: #ff8282 !important;
+  padding: 4px 16px;
+  border-radius: 1rem;
+  font-weight: 600;
+  margin-left: 2rem;
+  border: 3px solid black !important;
+}
+.navbar-right {
+  display: flex;
+  flex-direction: column;
+}
+
+#navbarNav {
+  align-self: flex-end;
+  margin-bottom: 1rem;
+}
+
+.nav-item {
+  margin-right: 13px;
+}
