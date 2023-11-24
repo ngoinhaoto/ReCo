@@ -17,7 +17,7 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./js/homepage.js" />
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/homepage.css')}}" />
 
     <script
       src="https://kit.fontawesome.com/c2ac5cb392.js"
@@ -29,7 +29,7 @@
       <div class="row">
         <a class="navbar-brand" href="#">
           <img
-            src="../assets/logo.png"
+            src="{{ url_for('static', filename = 'images/logo.png' )}}"
             width="150"
             height="150"
             class="d-inline-block align-top"
