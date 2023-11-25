@@ -1,0 +1,13 @@
+.filter-col {
+  display: flex;
+  flex-direction: column;
+  border-right: 3px solid black;
+}
+
+.filter-header {
+  font-weight: 800;
+}
+
+.filter-category {
+  color: rgb(105, 105, 105);
+}

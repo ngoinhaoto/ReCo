@@ -1,6 +1,7 @@
 .hero-section {
   height: 60vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/hero-section.jpg');
+  background: linear-gradient(150deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)),
+    url("../images/sexy.jpg");
   background-size: cover;
   color: white;
 }
@@ -14,24 +15,21 @@
   font-weight: bold;
   line-height: 52px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
 }
 
 .search-bar {
   border-radius: 25px !important;
   padding: 5px 0px 5px 30px;
-  color: #8A8888;
+  color: #8a8888;
   line-height: 35px;
-
 }
 /* Discover ethically-sourced, eco-friendly fashion that makes you look good and feel good. */
-
 
 .button-search {
   position: relative;
   right: 115px;
   top: 4px;
-  border-radius: 20px!important;
+  border-radius: 20px !important;
   background-color: green;
   border: none;
   padding: 1px 10px;
@@ -50,8 +48,7 @@
   margin-bottom: 0px !important;
 }
 
-
-.frequently-search{
+.frequently-search {
   gap: 2vw;
 }
 
@@ -64,12 +61,11 @@
 
 .btn-outline-customized:hover {
   background-color: white;
-  color: black 
-
+  color: black;
 }
 
 .card-customized {
-  background-color: #D2F38B;
+  background-color: #d2f38b;
   border: 2px solid black;
   border-radius: 20px !important;
 }
@@ -86,14 +82,14 @@
   margin: 10px 0px;
   */
   width: 60px;
-    height: 60px;
-    background-color: #905B1C;
-    border-radius: 50px;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Center vertically */
-    margin: 10px 0;
+  height: 60px;
+  background-color: #905b1c;
+  border-radius: 50px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center vertically */
+  margin: 10px 0;
 }
 
 .card-title {
@@ -109,4 +105,25 @@
   .card-customized {
     max-width: none; /* Remove max-width for smaller screens */
   }
+}
+
+.about-us-title {
+  font-weight: 800;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.funko-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+/* --------------------------- Footer ---------------------------------------- */
+
+footer {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }

@@ -7,5 +7,10 @@ app = create_app()
 def index():
     return render_template('homepage.html')
 
+
+@app.route('/search')
+def search():
+    return render_template('search.html')
+
 if __name__ == '__main__':
     app.run(debug = True)

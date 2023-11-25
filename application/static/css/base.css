@@ -6,6 +6,8 @@
 
 .reco-nav {
   background-color: #f7ffe5 !important;
+  border-bottom: 3px solid black !important;
+
   justify-content: space-around !important;
 }
 
@@ -42,4 +44,14 @@
 
 .nav-item {
   margin-right: 13px;
+}
+.ai-creator-logo {
+  fill: green;
+  fill-opacity: 0.9;
+  transition: fill 0.3s ease; /* Smooth transition on color change */
+}
+
+/* Change color on hover */
+.button-ai:hover .ai-creator-logo {
+  fill: white;
 }

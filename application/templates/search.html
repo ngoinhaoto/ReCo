@@ -1,0 +1,24 @@
+{% extends 'base.html' %} {% block linkbonus %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename = 'css/search.css' )}}"
+/>
+{% endblock %} {% block content %}
+
+<div class="container my-4">
+  <div class="row">
+    <div class="col-2 filter-col">
+      <h2 class="filter-header">Filter</h2>
+
+      <div class="d-flex filter-category-header justify-content-around">
+        <div class="filter-category filter-product">Product</div>
+
+        |
+        <div class="filter-category">Material</div>
+      </div>
+    </div>
+    <div class="col-10-md"></div>
+  </div>
+</div>
+
+{% endblock %}
