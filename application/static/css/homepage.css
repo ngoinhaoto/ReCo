@@ -1,0 +1,112 @@
+.hero-section {
+  height: 60vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/hero-section.jpg');
+  background-size: cover;
+  color: white;
+}
+
+.hero {
+  /* margin-top: -15px; */
+}
+
+.hero-title {
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 52px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.search-bar {
+  border-radius: 25px !important;
+  padding: 5px 0px 5px 30px;
+  color: #8A8888;
+  line-height: 35px;
+
+}
+/* Discover ethically-sourced, eco-friendly fashion that makes you look good and feel good. */
+
+
+.button-search {
+  position: relative;
+  right: 115px;
+  top: 4px;
+  border-radius: 20px!important;
+  background-color: green;
+  border: none;
+  padding: 1px 10px;
+  font-size: 0.8rem;
+  height: 38px;
+  width: 110px;
+  color: white;
+  z-index: 2;
+}
+
+.button-search:hover {
+  opacity: 0.8;
+}
+
+.hero p {
+  margin-bottom: 0px !important;
+}
+
+
+.frequently-search{
+  gap: 2vw;
+}
+
+.btn-outline-customized {
+  border-color: #fff !important;
+  color: #fff;
+  border-radius: 20px !important;
+  padding: 5px 20px;
+}
+
+.btn-outline-customized:hover {
+  background-color: white;
+  color: black 
+
+}
+
+.card-customized {
+  background-color: #D2F38B;
+  border: 2px solid black;
+  border-radius: 20px !important;
+}
+
+.icon {
+  /* width: 60px;
+  height: 60px;
+  background-color: #905B1C;
+  border-radius: 50px;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  margin: 10px 0px;
+  */
+  width: 60px;
+    height: 60px;
+    background-color: #905B1C;
+    border-radius: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically */
+    margin: 10px 0;
+}
+
+.card-title {
+  font-weight: bold !important;
+}
+
+.card-body {
+  padding: 25px !important;
+}
+
+@media (max-width: 576px) {
+  /* Styles for small screens */
+  .card-customized {
+    max-width: none; /* Remove max-width for smaller screens */
+  }
+}
