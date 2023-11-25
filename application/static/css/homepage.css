@@ -1,45 +1,112 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,500&display=swap");
-
-body {
-  font-family: "Poppins";
+.hero-section {
+  height: 60vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/hero-section.jpg');
+  background-size: cover;
+  color: white;
 }
 
-.reco-nav {
-  background-color: #f7ffe5 !important;
-  justify-content: space-around !important;
+.hero {
+  /* margin-top: -15px; */
 }
 
-#avatar {
-  border-radius: 50%;
+.hero-title {
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 52px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
 }
 
-.shopping-cart {
-  color: #00640a !important;
-  font-size: 1.5rem;
+.search-bar {
+  border-radius: 25px !important;
+  padding: 5px 0px 5px 30px;
+  color: #8A8888;
+  line-height: 35px;
+
+}
+/* Discover ethically-sourced, eco-friendly fashion that makes you look good and feel good. */
+
+
+.button-search {
+  position: relative;
+  right: 115px;
+  top: 4px;
+  border-radius: 20px!important;
+  background-color: green;
+  border: none;
+  padding: 1px 10px;
+  font-size: 0.8rem;
+  height: 38px;
+  width: 110px;
+  color: white;
+  z-index: 2;
 }
 
-#searchbar {
-  width: 35vw;
+.button-search:hover {
+  opacity: 0.8;
 }
 
-.log-out-button {
-  background-color: #ff8282 !important;
-  padding: 4px 16px;
-  border-radius: 1rem;
-  font-weight: 600;
-  margin-left: 2rem;
-  border: 3px solid black !important;
+.hero p {
+  margin-bottom: 0px !important;
 }
-.navbar-right {
+
+
+.frequently-search{
+  gap: 2vw;
+}
+
+.btn-outline-customized {
+  border-color: #fff !important;
+  color: #fff;
+  border-radius: 20px !important;
+  padding: 5px 20px;
+}
+
+.btn-outline-customized:hover {
+  background-color: white;
+  color: black 
+
+}
+
+.card-customized {
+  background-color: #D2F38B;
+  border: 2px solid black;
+  border-radius: 20px !important;
+}
+
+.icon {
+  /* width: 60px;
+  height: 60px;
+  background-color: #905B1C;
+  border-radius: 50px;
+  padding: 10px 10px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-self: center;
+  margin: 10px 0px;
+  */
+  width: 60px;
+    height: 60px;
+    background-color: #905B1C;
+    border-radius: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically */
+    margin: 10px 0;
 }
 
-#navbarNav {
-  align-self: flex-end;
-  margin-bottom: 1rem;
+.card-title {
+  font-weight: bold !important;
 }
 
-.nav-item {
-  margin-right: 13px;
+.card-body {
+  padding: 25px !important;
+}
+
+@media (max-width: 576px) {
+  /* Styles for small screens */
+  .card-customized {
+    max-width: none; /* Remove max-width for smaller screens */
+  }
 }
