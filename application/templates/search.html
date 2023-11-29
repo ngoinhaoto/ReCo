@@ -5,20 +5,265 @@
 />
 {% endblock %} {% block content %}
 
-<div class="container my-4">
+<div>
   <div class="row">
-    <div class="col-2 filter-col">
-      <h2 class="filter-header">Filter</h2>
+    <div class="filter-col col-sm-2">
+      <h2 class="filter-header mt-4">Filter</h2>
 
-      <div class="d-flex filter-category-header justify-content-around">
-        <div class="filter-category filter-product">Product</div>
-
+      <div class="d-flex filter-category-header justify-content-center mb-4">
+        <div class="filter-category">Product</div>
         |
         <div class="filter-category">Material</div>
       </div>
+
+      <div class="d-flex flex-column filter-category-body">
+        <div class="accessory-wrapper mb-3">
+          <h6 style="margin-left: -15px">Accessories</h6>
+          <div class="d-flex mb-2">
+            <input
+              style="margin-right: 10px"
+              type="checkbox"
+              id="clothes"
+              name="clothes"
+              value="clothes"
+            />
+            <label for="clothes">Clothes</label>
+          </div>
+          <div class="d-flex mb-2">
+            <input
+              style="margin-right: 10px"
+              type="checkbox"
+              id="shoes"
+              name="shoes"
+              value="shoes"
+            />
+            <label for="clothes">Shoes</label>
+          </div>
+          <div class="d-flex mb-2">
+            <input
+              style="margin-right: 10px"
+              type="checkbox"
+              id="toys"
+              name="toys"
+              value="toys"
+            />
+            <label for="toys">Toys</label>
+          </div>
+          <div class="d-flex mb-2">
+            <input
+              style="margin-right: 10px"
+              type="checkbox"
+              id="other"
+              name="other"
+              value="other"
+            />
+            <label for="other">Other</label>
+          </div>
+        </div>
+        <div class="material-wrapper mb-3">
+          <h6 style="margin-left: -15px">Material</h6>
+          <div class="d-flex mb-2">
+            <input
+              style="margin-right: 10px"
+              type="checkbox"
+              id="material"
+              name="material"
+              value="material"
+            />
+            <label for="material">Material</label>
+          </div>
+          <div class="d-flex mb-2">
+            <input
+              style="margin-right: 10px"
+              type="checkbox"
+              id="denim"
+              name="denim"
+              value="denim"
+            />
+            <label for="denim">Denim</label>
+          </div>
+          <div class="d-flex mb-2">
+            <input
+              style="margin-right: 10px"
+              type="checkbox"
+              id="fabric"
+              name="fabric"
+              value="fabric"
+            />
+            <label for="fabric">Fabric</label>
+          </div>
+          <div class="d-flex mb-2">
+            <input
+              style="margin-right: 10px"
+              type="checkbox"
+              id="cotton"
+              name="cotton"
+              value="cotton"
+            />
+            <label for="cotton">Cotton</label>
+          </div>
+          <div class="d-flex mb-2">
+            <input
+              style="margin-right: 10px"
+              type="checkbox"
+              id="polyester"
+              name="polyester"
+              value="polyester"
+            />
+            <label for="polyester">Polyester</label>
+          </div>
+          <div class="d-flex mb-2">
+            <input
+              style="margin-right: 10px"
+              type="checkbox"
+              id="other"
+              name="other"
+              value="other"
+            />
+            <label for="other">Other</label>
+          </div>
+        </div>
+        <div class="size-wrapper mb-3">
+          <h6 style="margin-left: -15px">Size</h6>
+          <div class="d-flex mb-2">
+            <input
+              style="margin-right: 10px"
+              type="checkbox"
+              id="xs"
+              name="xs"
+              value="xs"
+            />
+            <label for="material">XS</label>
+          </div>
+
+          <div class="d-flex mb-2">
+            <input
+              style="margin-right: 10px"
+              type="checkbox"
+              id="s"
+              name="s"
+              value="s"
+            />
+            <label for="s">S</label>
+          </div>
+          <div class="d-flex mb-2">
+            <input
+              style="margin-right: 10px"
+              type="checkbox"
+              id="m"
+              name="m"
+              value="m"
+            />
+            <label for="m">M</label>
+          </div>
+          <div class="d-flex mb-2">
+            <input
+              style="margin-right: 10px"
+              type="checkbox"
+              id="l"
+              name="l"
+              value="l"
+            />
+            <label for="l">L</label>
+          </div>
+          <div class="d-flex mb-2">
+            <input
+              style="margin-right: 10px"
+              type="checkbox"
+              id="xl"
+              name="xl"
+              value="xl"
+            />
+            <label for="xl">XL</label>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="col-10-md"></div>
+
+    <div class="col-sm-9 mt-4 product-col mb-4">
+      <div class="d-flex mb-4 align-items-center justify-content-between">
+        <div class="header d-flex">
+          <button class="filter-button mr-4">
+            <i
+              style="color: #252b42; font-size: 1.5rem"
+              class="fa-solid fa-grip"
+            ></i>
+          </button>
+          <button class="filter-button">
+            <i
+              style="color: #737373; font-size: 1.5rem"
+              class="fa-solid fa-list-check"
+            ></i>
+          </button>
+          <div class="d-flex align-items-center">
+            <h3
+              style="
+                color: #252b42;
+                text-decoration: underline;
+                margin-right: 12px;
+                margin-left: 20px;
+              "
+            >
+              Results:
+            </h3>
+            <span style="color: #252b42"> Show all 100 products</span>
+          </div>
+        </div>
+        <button class="filter-button">
+          Sort <i class="fa-solid fa-arrow-down-short-wide"></i>
+        </button>
+      </div>
+
+      <div class="product-wrapper row">
+        <div class="col-sm-3 product-card d-flex flex-column text-center mb-4">
+          <img
+            src="../static/images/carbottle.png"
+            class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|} product-img"
+            alt=""
+          />
+          <h5 class="product-name">Car toys from bottles</h5>
+          <h6 class="product-price">49.000 VND</h6>
+        </div>
+        <div class="col-sm-3 product-card d-flex flex-column text-center mb-4">
+          <img
+            src="../static/images/plasticshoes.png"
+            class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|} product-img"
+            alt=""
+          />
+          <h5 class="product-name">Plastic Shoes</h5>
+          <h6 class="product-price">99.000 VND</h6>
+        </div>
+
+        <div class="col-sm-3 product-card d-flex flex-column text-center mb-4">
+          <img
+            src="../static/images/bottlebot.png"
+            class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|} product-img"
+            alt=""
+          />
+          <h5 class="product-name">Bottles Plant Pot</h5>
+          <h6 class="product-price">499.000 VND</h6>
+        </div>
+        <div class="col-sm-3 product-card d-flex flex-column text-center mb-4">
+          <img
+            src="../static/images/quilt.png"
+            class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|} product-img"
+            alt=""
+          />
+          <h5 class="product-name">Quilt from recycled clothes</h5>
+          <h6 class="product-price">500.000 VND</h6>
+        </div>
+        <div class="col-sm-3 product-card d-flex flex-column text-center mb-4">
+          <img
+            src="../static/images/quilt.png"
+            class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|} product-img"
+            alt=""
+          />
+          <h5 class="product-name">Quilt from recycled clothes</h5>
+          <h6 class="product-price">500.000 VND</h6>
+        </div>
+      </div>
+    </div>
+
+    {% endblock %}
   </div>
 </div>
-
-{% endblock %}
