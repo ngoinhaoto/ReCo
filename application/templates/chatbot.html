@@ -1,0 +1,27 @@
+{% extends 'base.html' %} {% block linkbonus %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename = 'css/chatbot.css' )}}"
+/>
+
+<script defer src="{{url_for('static', filename = 'js/chatbot.js')}}"></script>
+{% endblock %} {% block content %}
+
+<div>
+  <div class="row">
+    <div class="chat-container" id="chat-container">
+      <div class="chat-box" id="chat-box">
+        <div class="chat" id="chat">
+          <!-- Chat messages will be displayed here -->
+          <div class="bot-message my-4 mx-4">
+            <p>Welcome! How can I assist you today?</p>
+          </div>
+        </div>
+      </div>
+      <input type="text" id="user-input" placeholder="Type a message..." />
+      <button id="send-btn">Send</button>
+    </div>
+
+    {% endblock %}
+  </div>
+</div>
