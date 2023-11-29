@@ -1,32 +1,35 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const chatBox = document.getElementById("chat");
+  const sendButton = document.getElementById("send-btn");
   const userInput = document.getElementById("user-input");
-  const sendBtn = document.getElementById("send-btn");
+  const chatContent = document.getElementById("chat-content");
 
-  sendBtn.addEventListener("click", function () {
+  sendButton.addEventListener("click", function () {
     const userMessage = userInput.value.trim();
-
     if (userMessage !== "") {
-      // Display user message
-      displayMessage(userMessage, "user-message");
-
-      // Simulate bot response (replace this with actual backend logic)
-      setTimeout(function () {
-        const botResponse = 'This is a bot response to "' + userMessage + '"';
-        displayMessage(botResponse, "bot-message");
-      }, 500); // Simulating bot response delay
+      appendUserMessage(userMessage);
+      // Simulate bot response (replace this with actual bot logic)
+      setTimeout(() => {
+        const botMessage =
+          "This is a bot response. Replace it with your bot logic.";
+        appendBotMessage(botMessage);
+      }, 500);
+      userInput.value = "";
     }
-
-    userInput.value = ""; // Clear user input
   });
 
-  function displayMessage(message, type) {
-    const messageDiv = document.createElement("div");
-    messageDiv.classList.add(type);
-    messageDiv.innerHTML = `<p>${message}</p>`;
-    chatBox.appendChild(messageDiv);
+  function appendUserMessage(message) {
+    const userDiv = document.createElement("div");
+    userDiv.className = "user-message";
+    userDiv.textContent = message;
+    chatContent.appendChild(userDiv);
+    chatContent.scrollTop = chatContent.scrollHeight;
+  }
 
-    // Scroll to bottom of chat box
-    chatBox.scrollTop = chatBox.scrollHeight;
+  function appendBotMessage(message) {
+    const botDiv = document.createElement("div");
+    botDiv.className = "bot-message";
+    botDiv.textContent = message;
+    chatContent.appendChild(botDiv);
+    chatContent.scrollTop = chatContent.scrollHeight;
   }
 });

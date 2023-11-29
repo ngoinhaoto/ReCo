@@ -9,19 +9,19 @@
 
 <div>
   <div class="row">
-    <div class="chat-container" id="chat-container">
+    <h2 class="text-center my-4 ai-creator-header">AI Creator</h2>
+
+    <div class="chat-container">
       <div class="chat-box" id="chat-box">
-        <div class="chat" id="chat">
-          <!-- Chat messages will be displayed here -->
-          <div class="bot-message my-4 mx-4">
-            <p>Welcome! How can I assist you today?</p>
-          </div>
+        <div class="chat-content" id="chat-content">
+          <!-- Chat messages will be added here -->
         </div>
       </div>
-      <input type="text" id="user-input" placeholder="Type a message..." />
-      <button id="send-btn">Send</button>
+      <div class="input-container">
+        <input type="text" id="user-input" placeholder="Type a message..." />
+        <button id="send-btn">Send</button>
+      </div>
     </div>
-
     {% endblock %}
   </div>
 </div>
