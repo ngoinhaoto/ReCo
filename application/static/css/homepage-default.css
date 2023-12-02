@@ -6,3 +6,82 @@
 .swiper-pagination-bullet {
   background-color: rgb(141, 255, 141) !important;
 }
+
+.swiper-slide {
+  position: relative;
+}
+
+.slide-background {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 0, 0.8),
+    rgba(51, 51, 51, 0.4)
+  );
+  z-index: 0;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  z-index: 1; /* Ensure the text overlay is above the overlay */
+  text-align: right;
+}
+.weird-icon-part {
+  margin-top: 50px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.international-brand img {
+  height: 75px;
+  width: auto;
+}
+
+.best-seller-example {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-button {
+  padding: 8px 16px;
+  border: 2px solid black;
+  outline: none;
+  background-color: white;
+  border-radius: 5px;
+  margin-right: 12px;
+}
+
+.filter-button:hover {
+  background-color: rgb(79, 79, 79);
+  color: white;
+}
+.filter-button:hover > i {
+  color: white !important;
+}
+
+.button-div {
+  align-self: flex-end;
+  margin-right: 5rem;
+}
