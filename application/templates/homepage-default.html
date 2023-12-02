@@ -1,0 +1,71 @@
+{% extends 'base.html' %} {% block linkbonus %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename = 'css/homepage-default.css' )}}"
+/>
+<script
+  defer
+  src="{{url_for('static', filename = 'js/homepage-default.js')}}"
+></script>
+<!-- Add Bootstrap CSS and JS CDN links -->
+<link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+/>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+{% endblock %} {% block content %}
+<div>
+  <div class="row">
+    <h1 class="text-center">New Feeds</h1>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides with background images -->
+        <div
+          class="swiper-slide"
+          style="
+            background-size: cover;
+            background-image: url('https://images.unsplash.com/photo-1615310748170-29d7088865ad?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+          "
+        ></div>
+        <div
+          class="swiper-slide"
+          style="
+            background-size: cover;
+            background-image: url('https://images.unsplash.com/photo-1520591799316-6b30425429aa?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHJlY3ljbGVkJTIwY2xvdGhlc3xlbnwwfHwwfHx8MA%3D%3D');
+          "
+        ></div>
+        <div
+          class="swiper-slide"
+          style="
+            background-size: cover;
+            background-image: url('https://images.unsplash.com/photo-1578939662863-5cd416d45a69?q=80&w=2907&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+          "
+        ></div>
+        <div
+          class="swiper-slide"
+          style="
+            background-size: cover;
+            background-image: url('https://images.unsplash.com/photo-1604176354204-9268737828e4?q=80&w=2283&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+          "
+        ></div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+      <!-- Remove navigation buttons -->
+      <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+
+      <div class="swiper-scrollbar"></div>
+    </div>
+  </div>
+</div>
+{% endblock %}

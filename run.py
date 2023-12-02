@@ -21,5 +21,10 @@ def search():
 def chatbot():
     return render_template('chatbot.html')
 
+
+@app.route('/homepage-default')
+def homepage_default():
+    return render_template('homepage-default.html')
+
 if __name__ == '__main__':
     app.run(debug = True)
