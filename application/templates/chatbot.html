@@ -1,10 +1,10 @@
 {% extends 'base.html' %} {% block linkbonus %}
 <link
   rel="stylesheet"
-  href="{{ url_for('static', filename = 'css/chatbot.css' )}}"
+  href="{{ url_for('static', filename = './css/chatbot.css' )}}"
 />
 
-<script defer src="{{url_for('static', filename = 'js/chatbot.js')}}"></script>
+<script defer src="{{url_for('static', filename = './js/chatbot.js')}}"></script>
 {% endblock %} {% block content %}
 
 <div>

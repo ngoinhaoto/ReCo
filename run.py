@@ -1,15 +1,15 @@
 from application import create_app
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect
 
 app = create_app()
 
 @app.route('/')
-
-
-
 def index():
     return render_template('homepage.html')
 
+@app.route('/ai-creator')
+def link_ai_creator():
+    return redirect('http://127.0.0.1:8000/')
 
 @app.route('/search')
 def search():
