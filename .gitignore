@@ -1,1 +1,4 @@
 myenv
+
+LLMWeb/Web_Dialog/models/trained_checkpoint/cloth_segm.pth
+LLMWeb/Web_Dialog/models/trained_checkpoint/checkpoint_u2net.pth
